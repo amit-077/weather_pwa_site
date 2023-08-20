@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <style type="text/css">
+      html {
+        height: 100%;
+      }
+      body {
+        font-family: sans-serif;
+        height: 100%;
+        margin: 0;
+        background: #18344c;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: #f5f5f5;
+      }
+
+      .heading1 {
+        letter-spacing: 0.2rem;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+      .heading2 {
+        margin-top: 0.3rem;
+        font-size: 1rem;
+        font-weight: 100;
+      }
+
+      .heading3 {
+        font-weight: 100;
+        letter-spacing: 0.3rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        background-color: #1d2848;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .heading3:hover {
+        color: #e1e1e1;
+      }
+    </style>
+  </head>
+
+  <script>
+    function reloadPage() {
+      location.reload();
+    }
+  </script>
+
+  <body>
+    <div>
+      <h1 class="heading1">OFFLINE</h1>
+      <h3 class="heading2">Please check your internet connection</h3>
+      <h3 class="heading3" onclick="reloadPage()">RETRY</h3>
+    </div>
+  </body>
+</html>
